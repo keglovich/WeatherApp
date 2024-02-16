@@ -22,7 +22,7 @@ function fetchData() {
    const city = document.querySelector('.search-box input').value;
 
    if (city === '') {
-      resetApp();
+      //resetApp();
       return;
    }
 
@@ -41,7 +41,7 @@ function fetchData() {
 }
 
 function showError() {
-   resetApp();
+   //resetApp();
    container.style.height = '400px';
    weatherBox.style.display = 'none';
    weatherDetails.style.display = 'none';
@@ -50,7 +50,7 @@ function showError() {
 }
 
 function updateWeather(json) {
-   resetApp();
+   //resetApp();
    error404.style.display = 'none';
    error404.classList.remove('fadeIn');
 
@@ -92,9 +92,9 @@ function updateWeather(json) {
    container.style.height = '590px';
 }
 
-function resetApp() {
+/* function resetApp() {
    container.style.height = '';
    weatherBox.style.display = 'none';
    weatherDetails.style.display = 'none';
    error404.style.display = 'none';
-}
+} */
